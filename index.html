@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorPro - Transforme sua Carreira</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>MentorPro</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1 class="hero-title">
+                    Transforme sua <span class="highlight">Carreira</span> 
+                    com Mentoria Profissional
+                </h1>
+                <p class="hero-description">
+                    Acelere seu crescimento profissional com mentores experientes. 
+                    Desenvolva habilidades, conquiste objetivos e alcance o sucesso que você merece.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        Começar Agora
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Acelere seu Crescimento</h3>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat">
+                <h3 class="stat-number">500+</h3>
+                <p>Profissionais Mentorados</p>
+            </div>
+            <div class="stat">
+                <h3 class="stat-number">95%</h3>
+                <p>Taxa de Sucesso</p>
+            </div>
+            <div class="stat">
+                <h3 class="stat-number">50+</h3>
+                <p>Mentores Especialistas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Por que escolher a MentorPro?</h2>
+                <p>Somos especialistas em desenvolvimento profissional e transformação de carreiras</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Mentores Experientes</h3>
+                    <p>Profissionais com mais de 10 anos de experiência em suas áreas de atuação</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3>Foco em Resultados</h3>
+                    <p>Metodologia comprovada para acelerar seu crescimento profissional</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexibilidade Total</h3>
+                    <p>Horários flexíveis que se adaptam à sua rotina e necessidades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções personalizadas para cada etapa da sua jornada profissional</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Mentoria Executiva</h3>
+                    <p>Desenvolvimento de liderança e habilidades executivas para profissionais seniores</p>
+                    <ul>
+                        <li>Coaching de liderança</li>
+                        <li>Estratégias de negócio</li>
+                        <li>Gestão de equipes</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Transição de Carreira</h3>
+                    <p>Suporte completo para mudanças de área ou progressão profissional</p>
+                    <ul>
+                        <li>Análise de perfil</li>
+                        <li>Planejamento estratégico</li>
+                        <li>Networking direcionado</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Desenvolvimento Técnico</h3>
+                    <p>Aprimoramento de habilidades técnicas e competências específicas</p>
+                    <ul>
+                        <li>Capacitação técnica</li>
+                        <li>Certificações</li>
+                        <li>Projetos práticos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Entre em Contato</h2>
+                <p>Pronto para transformar sua carreira? Vamos conversar!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Fale Conosco</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(34) 9156-XXXX</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>vitor.medeiros@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo, SP - Brasil</span>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Seu telefone/WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Conte-nos sobre seus objetivos profissionais..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fab fa-whatsapp"></i>
+                        Enviar via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>MentorPro</h3>
+                    <p>Transformando carreiras, construindo futuros.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MentorPro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5512991015266" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="1000">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
